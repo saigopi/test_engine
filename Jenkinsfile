@@ -16,6 +16,8 @@ pipeline {
             steps {
                 echo 'Test Completed - Deploying_Test_Engine....'
             }
-        }
-    }
+        } catch (error) {
+            throw error
+    } finally {
+}
 }
